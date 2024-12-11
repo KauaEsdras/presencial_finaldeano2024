@@ -50,6 +50,7 @@ label {
     font-size: 14px;
 }
 
+/* Garantir que os inputs não ultrapassem o limite */
 input,
 select {
     width: 100%;
@@ -59,7 +60,14 @@ select {
     border-radius: 5px;
     background-color: #2a2a2a;
     color: #ffffff;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
+
+input:focus {
+    outline: 2px solid #00f284;
+    background-color: #333;
+}
+
 
 input:focus {
     outline: 2px solid #00f284;
@@ -86,7 +94,7 @@ input[type="submit"]:hover,
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #00f284;
+    background-color: #25D366;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -191,4 +199,8 @@ input[type="submit"]:hover,
     border: solid #121212;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+}
+
+.reserve {
+    display: none;
 }
