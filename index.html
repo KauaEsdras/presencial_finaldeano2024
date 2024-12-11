@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./20241211_164826.png">
+    <title>Formulário de Inscrição - Six Eight</title>
+</head>
+
+<body>
+    <!-- Título e Subtítulo -->
+    <header class="header">
+        <h1>Six Eight - Interbairro de Games</h1>
+        <h3>Apoio: Secretaria do Estado de Indústria, Ciência e Tecnologia (SEICT)</h3>
+    </header>
+
+    <div class="container">
+        <form action="https://api.sheetmonkey.io/form/e6vL5uocQcrKJVuRA17jbU" method="post">
+
+            <!-- Sessão do Time -->
+            <h2>Sessão do Time</h2>
+            <label>Nome do Time: <input type="text" name="team_name" placeholder="EX: SIX EIGHT" required></label>
+
+            <!-- Informações do Capitão -->
+            <h2>Informações do Capitão</h2>
+            <label>Nome do Capitão: <input type="text" name="captain_name" placeholder="EX: João Victor" required></label>
+            <label>Nickname do Capitão: <input type="text" name="captain_nickname" placeholder="EX: SIX XXXX7" required></label>
+            <label>Número de Telefone do Capitão:
+                <input type="tel" name="captain_phone" required placeholder="EX: 68940028922" pattern="\d{11}"
+                    title="Insira exatamente 11 dígitos, sem espaços ou caracteres especiais">
+            </label>
+
+            <!-- Informações dos Jogadores -->
+            <h2>Informações do Jogador 2</h2>
+            <label>Nickname do Jogador 2: <input type="text" name="player2_nickname" placeholder="EX: SIX XXXYX" required></label>
+            <label>Número de Telefone do Jogador 2:
+                <input type="tel" name="player2_phone" required placeholder="EX: 68940028922" pattern="\d{11}"
+                    title="Insira exatamente 11 dígitos, sem espaços ou caracteres especiais">
+            </label>
+
+            <h2>Informações do Jogador 3</h2>
+            <label>Nickname do Jogador 3: <input type="text" name="player3_nickname" placeholder="EX: SIX XXX7X" required></label>
+            <label>Número de Telefone do Jogador 3:
+                <input type="tel" name="player3_phone" required placeholder="EX: 68940028922" pattern="\d{11}"
+                    title="Insira exatamente 11 dígitos, sem espaços ou caracteres especiais">
+            </label>
+
+            <h2>Informações do Jogador 4</h2>
+            <label>Nickname do Jogador 4: <input type="text" name="player4_nickname" placeholder="EX: SIX XXXJX" required></label>
+            <label>Número de Telefone do Jogador 4:
+                <input type="tel" name="player4_phone" required placeholder="EX: 68940028922" pattern="\d{11}"
+                    title="Insira exatamente 11 dígitos, sem espaços ou caracteres especiais">
+            </label>
+
+            <!-- Jogadores Reservas -->
+            <div id="reserves">
+                <div class="reserve" id="reserve1">
+                    <h2>Informações do Jogador 5</h2>
+                    <label>Nickname do Jogador 5: <input type="text" name="player5_nickname" placeholder="EX: SIX XXXXX"></label>
+                    <label>Número de Telefone do Jogador 5: <input type="number" name="player5_phone" placeholder="EX: 68940028922"></label>
+                </div>
+                <div class="reserve" id="reserve2">
+                    <h2>Informações do Jogador 6</h2>
+                    <label>Nickname do Jogador 6: <input type="text" name="player6_nickname" placeholder="EX: SIX XXXXX"></label>
+                    <label>Número de Telefone do Jogador 6: <input type="number" name="player6_phone" placeholder="EX: 68940028922"></label>
+                </div>
+            </div>
+            <button type="button" class="btn" id="addReserve">Adicionar Jogador Reserva</button>
+            <button type="button" class="btn" id="removeReserve">Remover Jogador Reserva</button>
+
+            <!-- Escolha de Campeonato -->
+            <h2>Escolha o Campeonato que Irá Participar</h2>
+            <div class="championship-options">
+                <label class="checkbox-container">
+                    4v4
+                    <input type="checkbox" name="championship[]" value="4v4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Battle Royale
+                    <input type="checkbox" name="championship[]" value="Battle Royale">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <!-- Botão de Enviar -->
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time">
+            <input type="submit" value="Inscrever-se">
+        </form>
+    </div>
+
+    <!-- Ícone de Suporte -->
+    <div id="support-icon">
+        <a href="https://wa.me/seu-numero-aqui" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
